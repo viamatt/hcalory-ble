@@ -1,13 +1,13 @@
 [project]
 name = "hcalory-ble"
-version = "0.1.2"  # TODO sync HASS and project versions
+version = "0.1.2"
 description = "Home Assistant custom integration for Hcalory BLE diesel heaters."
 authors = [{ name = "Evan Foster", email = "evan@fos.tech" }]
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
   "aioesphomeapi>=27.0.2",
-  "hcalory-control==0.1.6",
+  "hcalory-control @ git+https://github.com/viamatt/hcalory-control@main",
   "homeassistant>=2025.2",
 ]
 
@@ -21,4 +21,3 @@ dev = [
     "pyserial>=3.5", # For HASS serial component
     "bluetooth-auto-recovery>=1.4.2", # For HASS Bluetooth component
 ]
-
